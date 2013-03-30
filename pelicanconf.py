@@ -3,7 +3,7 @@
 
 AUTHOR = u'me'
 SITENAME = u'Pelican DEMO'
-SITEURL = ''
+SITEURL = 'http://soulne4ny.github.com/pelican-demo'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -13,10 +13,19 @@ DEFAULT_LANG = u'en'
 LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
           ('Python.org', 'http://python.org'),
           ('Jinja2', 'http://jinja.pocoo.org'),
-          ('You can modify those links in your config file', '#'),)
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
+SOCIAL = (('LDN', 'http://ldn.lv'),
           ('Another social link', '#'),)
+
+FILENAME_METADATA = ('(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)')
+
+THEME = 'bootstrap2'
+
+FILES_TO_COPY = (
+    ('/dev/null', '.nojekyll'),
+)
+
 
 DEFAULT_PAGINATION = 3
